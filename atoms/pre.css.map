@@ -1,0 +1,1 @@
+{"version":3,"sources":["pre.css","<no source>"],"names":[],"mappings":"AAAA,ICAA,yBAAA,8CAAA,qBAAA,cAAA,aAAA,aDEA","file":"pre.css","sourceRoot":"../src","sourcesContent":["pre {\n  @apply border border-solid border-neutral-300 rounded p-2 m-2 overflow-auto;\n}\n",null]}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["summary.css","<no source>"],"names":[],"mappings":"AAAA,QCAA,uBAAA,+CAAA,cDEA","file":"summary.css","sourceRoot":"../src","sourcesContent":["summary {\n  @apply font-body text-base;\n}\n",null]}

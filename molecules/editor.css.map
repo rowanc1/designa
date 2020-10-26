@@ -1,0 +1,1 @@
+{"version":3,"sources":["editor.css","<no source>"],"names":[],"mappings":"AAAA,ICAA,iBAAA,qBAAA,eAAA,gBAAA,qBAAA,6CDMA,CAHE,eACE,YACF","file":"editor.css","sourceRoot":"../src","sourcesContent":["pre {\n  @apply border rounded p-1 overflow-x-auto border-neutral-300;\n\n  code:focus {\n    outline: none;\n  }\n}\n",null]}

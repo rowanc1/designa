@@ -1,0 +1,109 @@
+*,:after,:before{
+  box-sizing:border-box;
+  border:0 solid
+}
+
+html{
+  font-size:16px
+}
+
+.hidden{
+  display:none
+}
+
+:host,stencila-editor{
+  /** @prop --line-number-background: Background color of the Editor Line Numbers gutter */
+  --line-number-background:var(--color-background,var(--color-neutral-200,#edf2f7));
+  all:initial;
+  display:flex;
+  max-width:100%;
+  --border-width:1px;
+  --background-color:transparent
+}
+
+:host .editorContainer,stencila-editor .editorContainer{
+  display:flex;
+  flex-direction:column;
+  flex-grow:1;
+  max-width:100%;
+  border-width:1px;
+  border-radius:.25rem;
+  border-color:#e2e8f0;
+  border-color:var(--color-neutral-300,#e2e8f0);
+  background-color:var(--background-color);
+  border-width:var(--border-width)
+}
+
+:host .editorContainer:focus-within,stencila-editor .editorContainer:focus-within{
+  box-shadow:inset 0 0 0 2px var(--color-neutral-400)
+}
+
+:host .editor,stencila-editor .editor{
+  flex-grow:1;
+  max-width:100%;
+  overflow:auto;
+  font-family:monospace;
+  font-family:var(--font-family-mono,monospace);
+  cursor:text
+}
+
+:host(::slotted(.editorContainer)) .codemirror-content *,:host(::slotted(.editorContainer)) .gutterElement *,stencila-editor::slotted(.editorContainer) .codemirror-content *,stencila-editor::slotted(.editorContainer) .gutterElement *{
+  font-family:monospace;
+  font-family:var(--font-family-mono,monospace);
+  font-size:.875rem
+}
+
+:host(::slotted(.editorContainer)) .codemirror-focused,stencila-editor::slotted(.editorContainer) .codemirror-focused{
+  outline:2px solid transparent;
+  outline-offset:2px
+}
+
+:host(::slotted(.editorContainer)) .codemirror-scroller,stencila-editor::slotted(.editorContainer) .codemirror-scroller{
+  overflow:auto
+}
+
+:host(::slotted(.editorContainer)) .cm-gutters,stencila-editor::slotted(.editorContainer) .cm-gutters{
+  background-color:var(--line-number-background)
+}
+
+:host menu,stencila-editor menu{
+  display:flex;
+  justify-content:flex-end;
+  padding:1px 0;
+  margin:0;
+  border-top-width:1px;
+  border-color:#e2e8f0;
+  border-color:var(--color-neutral-300,#e2e8f0)
+}
+
+:host menu stencila-icon,stencila-editor menu stencila-icon{
+  --height:1em;
+  --width:1em;
+  margin-right:.25rem
+}
+
+:host menu select,stencila-editor menu select{
+  margin-right:.5rem;
+  font-size:.75rem;
+  text-align:left;
+  background-color:transparent;
+  border-style:none;
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance:none;
+  color:#4a5568;
+  color:var(--color-neutral-700,#4a5568);
+  font-family:sans-serif;
+  font-family:var(--font-family-body,sans-serif)
+}
+
+:host menu select option,stencila-editor menu select option{
+  text-align:right;
+  font-family:sans-serif;
+  font-family:var(--font-family-body,sans-serif)
+}
+
+:host menu select:active,:host menu select:focus,:host menu select:hover,stencila-editor menu select:active,stencila-editor menu select:focus,stencila-editor menu select:hover{
+  color:#1a202c;
+  color:var(--color-neutral-900,#1a202c)
+}

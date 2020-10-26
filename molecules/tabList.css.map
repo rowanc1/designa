@@ -1,0 +1,1 @@
+{"version":3,"sources":["tabList.css","<no source>"],"names":[],"mappings":"AAAA,kBCAA,aDEA,CAEA,+CCJA,aAAA,mBAAA,UAAA,SAAA,yBAAA,iDDQA","file":"tabList.css","sourceRoot":"../src","sourcesContent":["stencila-tab-list {\n  @apply block;\n}\n\n:host ul,\nstencila-tab-list ul,\nul[role='tablist'] {\n  @apply flex flex-row p-0 m-0 bg-neutral-100;\n}\n",null]}

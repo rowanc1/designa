@@ -1,0 +1,1 @@
+{"version":3,"sources":["tooltip.css","<no source>"],"names":[],"mappings":"AAAA,+BCAA,WAAA,WAAA,qBAAA,iBAAA,kEAAA,sBAAA,yBAAA,kDAAA,WAAA,8BAAA,uBAAA,8CDGA","file":"tooltip.css","sourceRoot":"../src","sourcesContent":[":host,\nstencila-tooltip-element {\n  @apply z-50 w-auto px-2 py-1 text-xs shadow rounded-md bg-neutral-900 text-stock font-body;\n}\n",null]}

@@ -1,0 +1,10 @@
+stencila-tab-list{
+  display:block
+}
+
+:host ul,ul[role=tablist]{
+  display:flex;
+  flex-direction:row;
+  padding:0;
+  margin:0
+}

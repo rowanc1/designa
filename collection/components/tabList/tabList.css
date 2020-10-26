@@ -1,0 +1,12 @@
+stencila-tab-list{
+  display:block
+}
+
+:host ul,stencila-tab-list ul,ul[role=tablist]{
+  display:flex;
+  flex-direction:row;
+  padding:0;
+  margin:0;
+  background-color:#f7fafc;
+  background-color:var(--color-neutral-100,#f7fafc)
+}

@@ -1,0 +1,5 @@
+:host{
+  /** @prop --background: Background color of the Action Menu component */--background:var(--color-neutral-200,#edf2f7);
+  /** @prop --border: Border color of the Action Menu component */--border:var(--color-neutral-300,#e2e8f0);position:absolute;top:0;right:0;z-index:10;padding:1px .25rem;font-family:monospace;font-family:var(--font-family-mono,monospace);font-size:.75rem;line-height:1;border-width:0 0 1px 1px;border-style:solid;border-bottom-left-radius:.25rem;background-color:var(--background);border-color:var(--border)}:host .hidden{display:none}:host nav>*{vertical-align:middle}:host ul{padding:0;margin:0;list-style-type:none}:host li{display:inline;padding-right:.25rem}:host li:last-child{padding-right:0}:host stencila-button{display:inline-block}:host .actionContainer{display:inline-block;overflow:hidden;white-space:nowrap;vertical-align:middle;width:var(--max-width);transition:width .12s ease-in-out}:host .actionContainer:not(.isAnimating):not(.isCollapsed){width:auto}:host .secondaryActions:not(:hover):not(:focus) .actionContainer.isCollapsed{width:0}
+
+/*# sourceMappingURL=actionMenu.css.map */

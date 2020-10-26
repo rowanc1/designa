@@ -1,0 +1,57 @@
+:host,stencila-executable-document-toolbar{
+  /** @prop --background: Sets the background color of the component. */
+  --background:var(--color-neutral-300);
+  display:block
+}
+
+:host([position=fixed]),stencila-executable-document-toolbar[position=fixed]{
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:30;
+  width:100%;
+  max-width:none!important
+}
+
+:host([position=fixed])+*,stencila-executable-document-toolbar[position=fixed]+*{
+  margin-top:3rem
+}
+
+:host .hidden-sm,stencila-executable-document-toolbar .hidden-sm{
+  display:none
+}
+
+@media (min-width:640px){
+  :host .hidden-sm,stencila-executable-document-toolbar .hidden-sm{
+    display:inline
+  }
+}
+
+:host .executableDocumentStatus,stencila-executable-document-toolbar .executableDocumentStatus{
+  font-size:.875rem;
+  line-height:1;
+  color:#000;
+  color:var(--color-key,#000)
+}
+
+:host .executableDocumentStatus.success,stencila-executable-document-toolbar .executableDocumentStatus.success{
+  color:#2f855a;
+  color:var(--color-success-700,#2f855a)
+}
+
+:host .executableDocumentStatus.danger,stencila-executable-document-toolbar .executableDocumentStatus.danger{
+  color:#f56565;
+  color:var(--color-danger-500,#f56565)
+}
+
+:host .executableDocumentStatus stencila-icon,stencila-executable-document-toolbar .executableDocumentStatus stencila-icon{
+  margin-right:.25rem
+}
+
+:host .executableDocumentStatus stencila-tooltip,stencila-executable-document-toolbar .executableDocumentStatus stencila-tooltip{
+  cursor:help
+}
+
+:host .executableDocumentStatus span,stencila-executable-document-toolbar .executableDocumentStatus span{
+  vertical-align:middle
+}

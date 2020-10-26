@@ -1,0 +1,49 @@
+a{
+  font-family:sans-serif;
+  font-family:var(--font-family-body,sans-serif);
+  font-size:1rem;
+  text-decoration:none;
+  color:#000;
+  color:var(--color-key,#000)
+}
+
+:host,stencila-tab{
+  flex-grow:1
+}
+
+:host li,ul[role=tablist] li{
+  display:flex;
+  flex-direction:row;
+  margin:0;
+  font-size:.875rem;
+  font-weight:500;
+  letter-spacing:.05em;
+  text-align:center;
+  text-transform:uppercase;
+  list-style-type:none
+}
+
+:host li a,ul[role=tablist] li a{
+  display:block;
+  width:100%;
+  padding:1rem;
+  line-height:1;
+  border:0 solid #e2e8f0;
+  border-color:var(--color-neutral-300,#e2e8f0);
+  border-bottom:2px solid var(--color-neutral-300,#e2e8f0)
+}
+
+:host li a[aria-selected=true],ul[role=tablist] li a[aria-selected=true]{
+  border-bottom-width:2px;
+  border-color:#4299e1;
+  border-color:var(--color-primary-500,#4299e1);
+  color:#4299e1;
+  color:var(--color-primary-500,#4299e1)
+}
+
+:host li a:hover:not([aria-selected=true]),ul[role=tablist] li a:hover:not([aria-selected=true]){
+  background-color:#f7fafc;
+  background-color:var(--color-neutral-100,#f7fafc);
+  border-color:#a0aec0;
+  border-color:var(--color-neutral-500,#a0aec0)
+}

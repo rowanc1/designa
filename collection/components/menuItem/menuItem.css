@@ -1,0 +1,25 @@
+:host{
+  display:flex;
+  align-items:center;
+  height:2rem;
+  padding-left:.5rem;
+  padding-right:.5rem;
+  font-size:.875rem;
+  letter-spacing:.025em;
+  text-decoration:none;
+  text-transform:uppercase;
+  cursor:pointer;
+  font-family:sans-serif;
+  font-family:var(--font-family-body,sans-serif);
+  color:#000;
+  color:var(--color-key,#000)
+}
+
+:host(:hover){
+  background-color:#edf2f7;
+  background-color:var(--color-neutral-200,#edf2f7)
+}
+
+:host stencila-icon{
+  margin-right:.5rem
+}

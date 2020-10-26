@@ -1,0 +1,40 @@
+:host,stencila-input{
+  position:relative;
+  display:block;
+  font-size:1rem
+}
+
+:host(.inline),stencila-input.inline{
+  display:inline-block
+}
+
+:host stencila-icon,stencila-input stencila-icon{
+  position:absolute;
+  left:0;
+  padding-left:.5rem;
+  color:#a0aec0;
+  color:var(--color-neutral-500,#a0aec0);
+  top:50%;
+  transform:translateY(-50%)
+}
+
+:host stencila-icon+input,stencila-input stencila-icon+input{
+  padding-left:2rem
+}
+
+:host input,stencila-input input{
+  width:100%;
+  padding:.5rem;
+  font-size:1rem;
+  border-radius:.25rem;
+  border:1px solid #e2e8f0;
+  border-color:var(--color-neutral-300,#e2e8f0)
+}
+
+:host input:active,:host input:focus,stencila-input input:active,stencila-input input:focus{
+  outline:2px solid transparent;
+  outline-offset:2px;
+  border-color:#4299e1;
+  border-color:var(--color-primary-500,#4299e1);
+  box-shadow:inset 0 0 0 1px var(--color-primary-500)
+}

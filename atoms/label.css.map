@@ -1,0 +1,1 @@
+{"version":3,"sources":["label.css","<no source>"],"names":[],"mappings":"AAAA,MCAA,cAAA,qBAAA,kBAAA,gBAAA,gBAAA,cAAA,sCDMA,CAHE,YCHF,gBDKE","file":"label.css","sourceRoot":"../src","sourcesContent":["label {\n  @apply block mb-1 text-sm font-bold text-left text-neutral-600;\n\n  & + & {\n    @apply mt-2;\n  }\n}\n",null]}

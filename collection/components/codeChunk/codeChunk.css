@@ -1,0 +1,114 @@
+*,:after,:before{
+  box-sizing:border-box;
+  border:0 solid
+}
+
+html{
+  font-size:16px
+}
+
+.hidden{
+  display:none
+}
+
+code,code[class*=language-],output{
+  font-family:monospace;
+  font-family:var(--font-family-mono,monospace);
+  font-size:75%
+}
+
+pre{
+  border:1px solid #e2e8f0;
+  border-color:var(--color-neutral-300,#e2e8f0);
+  border-radius:.25rem;
+  padding:.5rem;
+  margin:.5rem;
+  overflow:auto
+}
+
+.preReset{
+  padding:0;
+  margin:0;
+  border-width:0
+}
+
+:host,stencila-code-chunk{
+  /** @prop --background: Background color of the Code Output section */
+  --background:var(--color-stock,#fff);
+  /** @prop --background-editor: Background color of the Code Editor section */
+  --background-editor:var(--color-neutral-200,#edf2f7);
+  /** @prop --border: Border color around the component as well as internal section dividers */
+  --border:var(--color-neutral-300,#e2e8f0);
+  position:relative;
+  display:block;
+  width:100%;
+  margin-top:1rem;
+  margin-bottom:1rem;
+  overflow:hidden;
+  border-width:1px;
+  border-style:solid;
+  border-radius:.25rem;
+  border-color:var(--border)
+}
+
+:host stencila-action-menu,stencila-code-chunk stencila-action-menu{
+  position:relative;
+  display:block;
+  width:100%;
+  padding:0;
+  border-left-width:0;
+  border-right-width:0;
+  border-radius:0
+}
+
+:host stencila-editor,stencila-code-chunk stencila-editor{
+  --border-width:0;
+  flex-grow:1
+}
+
+:host stencila-node-list,stencila-code-chunk stencila-node-list{
+  padding:.5rem;
+  margin:0;
+  background-color:var(--background)
+}
+
+.editorContainer{
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  flex:1 1 auto;
+  margin:0;
+  border-width:0 0 1px;
+  border-radius:0;
+  background:var(--background-editor);
+  border-color:var(--border);
+  height:intrinsic
+}
+
+.editorContainer pre,.editorContainer pre[class*=language-]{
+  background-color:transparent
+}
+
+.editorContainer.hidden{
+  display:none
+}
+
+@media (min-width:1024px){
+  :host>div,stencila-code-chunk>div{
+    display:flex;
+    flex-direction:row;
+    align-items:stretch;
+    width:100%
+  }
+
+  .editorContainer{
+    width:50%;
+    border-bottom-width:0;
+    border-right-width:1px
+  }
+
+  stencila-node-list{
+    flex-grow:1;
+    width:50%
+  }
+}

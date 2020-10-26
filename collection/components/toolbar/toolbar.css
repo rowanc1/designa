@@ -1,0 +1,83 @@
+:host{
+  display:block;
+  height:3rem;
+  /** @prop --background: Sets the background color of the component. */
+  background-color:var(--color-neutral-300);
+  background-color:var(--background,var(--color-neutral-300))
+}
+
+:host([position=fixed]){
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:30;
+  width:100%
+}
+
+:host([position=fixed])+*{
+  margin-top:3rem
+}
+
+:host([color=stock]) div{
+  background-color:#fff;
+  background-color:var(--color-stock,#fff)
+}
+
+:host([color=key]) div{
+  background-color:#000;
+  background-color:var(--color-key,#000)
+}
+
+:host([color=primary]) div{
+  background-color:#4299e1;
+  background-color:var(--color-primary-500,#4299e1)
+}
+
+:host([color=neutral]) div{
+  background-color:#a0aec0;
+  background-color:var(--color-neutral-500,#a0aec0)
+}
+
+:host([color=success]) div{
+  background-color:#48bb78;
+  background-color:var(--color-success-500,#48bb78)
+}
+
+:host([color=warn]) div{
+  background-color:#ed8936;
+  background-color:var(--color-warn-500,#ed8936)
+}
+
+:host([color=danger]) div{
+  background-color:#f56565;
+  background-color:var(--color-danger-500,#f56565)
+}
+
+:host div{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:space-between;
+  padding:.5rem .25rem;
+  margin:0;
+  line-height:1;
+  color:#fff;
+  color:var(--color-stock,#fff);
+  font-family:sans-serif;
+  font-family:var(--font-family-body,sans-serif);
+  background-color:var(--background)
+}
+
+:host div,:host div>*{
+  vertical-align:middle
+}
+
+:host ::slotted([slot=middle]){
+  flex-grow:1;
+  padding-left:1rem;
+  padding-right:1rem
+}
+
+:host([color=key]::slotted(*)) stencila-button:not([disabled]):hover button.iconOnly{
+  background-color:hsla(0,0%,100%,.2)
+}

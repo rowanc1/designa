@@ -1,0 +1,1 @@
+{"version":3,"sources":["imageObject.css","<no source>"],"names":[],"mappings":"AAAA,oCCAA,YAAA,cDGA","file":"imageObject.css","sourceRoot":"../src","sourcesContent":[":host img,\nstencila-image-object img {\n  @apply h-auto max-w-full;\n}\n",null]}
